@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script>
+        function init(){
+            // var url = "https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true";
+            var imglist = document.getElementsByTagName("img");
+            var url = "https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/";
+            var svglist = ["logo-all-dark"];
+            for(const img of imglist){
+                var img_src = "";                
+                var alt = img.getAttribute("alt");
+                for (const svg of svglist) {
+                    if (alt == svg) {
+                        img_src = url + svg + ".svg?raw=true";
+                    } else {
+                        img_src = url + alt + ".png?raw=true";
+                    }
+                }
+                img.setAttribute("src", img_src);
+            }
+        }
+    </script>
+</head>
+
+<body onload="init();">
+    <div class="header">
+        <div class="container">
+            <div class="d-flex flex-center space-between">
+                <a href="#"><img class="header-logo" src="img/logo-all-dark.svg" alt="logo-all-dark"></a>
+                <ul class="d-flex">
+                    <li class="ml-6"><a href="#">首頁</a></li>
+                    <li class="ml-6"><a href="#">甜點</a></li>
+                    <li class="ml-6"><a href="#">登入</a></li>
+                    <li class="header-icon"><a href="#"><img src="img/shopping_cart.png" alt="shopping_cart"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner mb-6">
+        <div class="container">
+            <img src="img/banner.png" alt="banner">
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="container d-flex">
+            <div class="nav">
+                <ul>
+                    <li class="nav_item nav_item_title"><a class="c-white" href="#">甜點類別</a></li>
+                    <li class="nav_item nav_item_selected"><a class="c-nav_item" href="#">所有甜點（48）</a></li>
+                    <li class="nav_item"><a class="c-nav_item" href="#">本日精選（10）</a></li>
+                    <li class="nav_item"><a class="c-nav_item" href="#">人氣推薦（26）</a></li>
+                    <li class="nav_item"><a class="c-nav_item" href="#">新品上市（12）</a></li>
+                </ul>
+            </div>
+            <div class="d-gird product-grid">
+                <ul class="product-card">
+                    <li class="pos-relative">
+                        <img src="img/p-1.png" alt="p-1">
+                        <span class="product-tag">本日精選</span>
+                        <a href="#"><img class="product-icon" src="img/favorite_border.png" alt="favorite_border"></a>
+                    </li>
+                    <li class="d-flex space-between">
+                        <span class="product-nm">焦糖馬卡龍</span>
+                        <span class="product-price">NT$ 450</span>
+                    </li>
+                    <li class="product-btn"><a href="#">加入購物車</a></li>
+                </ul>
+                <ul class="product-card">
+                    <li class="pos-relative">
+                        <img src="img/p-2.png" alt="p-2">
+                        <span class="product-tag">本日精選</span>
+                        <a href="#"><img class="product-icon" src="img/favorite_border.png" alt="favorite_border"></a>
+                    </li>
+                    <li class="d-flex space-between">
+                        <span class="product-nm">焦糖馬卡龍</span>
+                        <span class="product-price">NT$ 450</span>
+                    </li>
+                    <li class="product-btn"><a href="#">加入購物車</a></li>
+                </ul>
+                <ul class="product-card">
+                    <li class="pos-relative">
+                        <img src="img/p-3.png" alt="p-3">
+                        <span class="product-tag">本日精選</span>
+                        <a href="#"><img class="product-icon" src="img/favorite_border.png" alt="favorite_border"></a>
+                    </li>
+                    <li class="d-flex space-between">
+                        <span class="product-nm">焦糖馬卡龍</span>
+                        <span class="product-price">NT$ 450</span>
+                    </li>
+                    <li class="product-btn"><a href="#">加入購物車</a></li>
+                </ul>
+                <ul class="product-card">
+                    <li class="pos-relative">
+                        <img src="img/p-4.png" alt="p-4">
+                        <span class="product-tag">本日精選</span>
+                        <a href="#"><img class="product-icon" src="img/favorite_border.png" alt="favorite_border"></a>
+                    </li>
+                    <li class="d-flex space-between">
+                        <span class="product-nm">焦糖馬卡龍</span>
+                        <span class="product-price">NT$ 450</span>
+                    </li>
+                    <li class="product-btn"><a href="#">加入購物車</a></li>
+                </ul>
+                <ul class="product-card">
+                    <li class="pos-relative">
+                        <img src="img/p-5.png" alt="p-5">
+                        <span class="product-tag">本日精選</span>
+                        <a href="#"><img class="product-icon" src="img/favorite_border.png" alt="favorite_border"></a>
+                    </li>
+                    <li class="d-flex space-between">
+                        <span class="product-nm">焦糖馬卡龍</span>
+                        <span class="product-price">NT$ 450</span>
+                    </li>
+                    <li class="product-btn"><a href="#">加入購物車</a></li>
+                </ul>
+                <ul class="product-card">
+                    <li class="pos-relative">
+                        <img src="img/p-6.png" alt="p-6">
+                        <span class="product-tag">本日精選</span>
+                        <a href="#"><img class="product-icon" src="img/favorite_border.png" alt="favorite_border"></a>
+                    </li>
+                    <li class="d-flex space-between">
+                        <span class="product-nm">焦糖馬卡龍</span>
+                        <span class="product-price">NT$ 450</span>
+                    </li>
+                    <li class="product-btn"><a href="#">加入購物車</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pages mb-6">
+        <div class="container">
+            <div class="d-flex flex-end">
+                <a class="pages-icon" href="#"><img src="img/arrow_left.png" alt="arrow_left"></a>
+                <ul class="d-flex">
+                    <li class="pages-item page-item-selected"><a href="#">1</a></li>
+                    <li class="pages-item"><a href="#">2</a></li>
+                    <li class="pages-item"><a href="#">3</a></li>
+                </ul>
+                <a class="pages-icon" href="#"><img src="img/arrow_right.png" alt="arrow_right"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
